@@ -1,0 +1,24 @@
+#INPUTS
+##startPoint (INT)
+startPoint = input("Give me a start point:") #Use input fuction to get startPoint
+startPoint = int(startPoint) #Convert to int using int()
+printnums = [startPoint, startPoint]
+
+##endPoint   (INT)
+endPoint = input("Give me an end point:") #Use input fuction to get endPoint
+endPoint = int(endPoint) #Convert to int using int()
+
+################################################################
+#PROCESSES
+i = 0
+print(startPoint)  #print the original value
+while i < endPoint: #Repeat until endpoint is reached
+    printnums[0] += 1  #Take startPoint1 and add one to it
+    printnums[1] -= 1  #Take startPoint2 and minus one from it
+    print(printnums[0]) #printing after each iteration
+    print(printnums[1]) #printing after each iteration
+    i += 1 
+
+
+#OUTPUTS
+#Print 1 higher and 1 lower at each iteration until the endPoint is reached
